@@ -1,0 +1,889 @@
+fileFormatVersion: 2
+guid: f619a0cb7a6ed3b49aa09a1051feb96b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7878534224194386465
+    second: BallTexture_0
+  - first:
+      213: -912051113714242039
+    second: BallTexture_1
+  - first:
+      213: 2748553984393138608
+    second: BallTexture_2
+  - first:
+      213: -3730752311338712874
+    second: BallTexture_3
+  - first:
+      213: 6798931323411083898
+    second: BallTexture_4
+  - first:
+      213: 3262487740493836471
+    second: BallTexture_5
+  - first:
+      213: 3718481994189033995
+    second: BallTexture_6
+  - first:
+      213: -8319642399475308700
+    second: BallTexture_7
+  - first:
+      213: -9026230174875330756
+    second: BallTexture_8
+  - first:
+      213: 3293411969625794489
+    second: BallTexture_9
+  - first:
+      213: 1313675188502114013
+    second: BallTexture_10
+  - first:
+      213: -266178790576466742
+    second: BallTexture_11
+  - first:
+      213: 8020587425327822346
+    second: BallTexture_12
+  - first:
+      213: 6704058637286395814
+    second: BallTexture_13
+  - first:
+      213: 7566452765718593139
+    second: BallTexture_14
+  - first:
+      213: 7280886455196871042
+    second: BallTexture_15
+  - first:
+      213: 8788394953539160073
+    second: BallTexture_16
+  - first:
+      213: -6426504649474517406
+    second: BallTexture_17
+  - first:
+      213: -4422928487549717128
+    second: BallTexture_18
+  - first:
+      213: 4000974030805976009
+    second: BallTexture_19
+  - first:
+      213: 9043761879933119698
+    second: BallTexture_20
+  - first:
+      213: 8068488863469431027
+    second: BallTexture_21
+  - first:
+      213: 4441232804664560446
+    second: BallTexture_22
+  - first:
+      213: 8650738010825587535
+    second: BallTexture_23
+  - first:
+      213: -3845233801305394002
+    second: BallTexture_24
+  - first:
+      213: -4332347794358407636
+    second: BallTexture_25
+  - first:
+      213: -5665446459191102868
+    second: BallTexture_26
+  - first:
+      213: -5142569042423281131
+    second: BallTexture_27
+  - first:
+      213: 1338916686960910923
+    second: BallTexture_28
+  - first:
+      213: -4925808604384691324
+    second: BallTexture_29
+  - first:
+      213: 8082908596874134281
+    second: BallTexture_30
+  - first:
+      213: -1898129846180741425
+    second: BallTexture_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BallTexture_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 254
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a3dd7722d265d60800000000000000
+      internalID: 7878534224194386465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 254
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e2016285eb753f0800000000000000
+      internalID: -912051113714242039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 254
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1dcbd4943d42620800000000000000
+      internalID: 2748553984393138608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_3
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 254
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d040b90a84b93cc0800000000000000
+      internalID: -3730752311338712874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 254
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72b1303408aa5e50800000000000000
+      internalID: 6798931323411083898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_5
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 254
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0b338805fa64d20800000000000000
+      internalID: 3262487740493836471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 254
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02d25f1ca3ba9330800000000000000
+      internalID: 3718481994189033995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_7
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 254
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467eef82151ba8c80800000000000000
+      internalID: -8319642399475308700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_8
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 182
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37d4ad9a736cb280800000000000000
+      internalID: -9026230174875330756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 182
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7a094bcbc84bd20800000000000000
+      internalID: 3293411969625794489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 182
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea9e0bf9c1b3210800000000000000
+      internalID: 1313675188502114013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_11
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 181
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac452fcdcc75e4cf0800000000000000
+      internalID: -266178790576466742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_12
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 181
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0631a8b4c9de4f60800000000000000
+      internalID: 8020587425327822346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 181
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af48dc9fc9990d50800000000000000
+      internalID: 6704058637286395814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_14
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 181
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ebd6e93b0710960800000000000000
+      internalID: 7566452765718593139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_15
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 181
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28966fbb7a7ea0560800000000000000
+      internalID: 7280886455196871042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 110
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9088987b5a6a6f970800000000000000
+      internalID: 8788394953539160073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 109
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266dca4021870d6a0800000000000000
+      internalID: -6426504649474517406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 109
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875b4a869f99e92c0800000000000000
+      internalID: -4422928487549717128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 109
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3c0c5dea0568730800000000000000
+      internalID: 4000974030805976009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_20
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 108
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dce1ae8385e18d70800000000000000
+      internalID: 9043761879933119698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_21
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 108
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f86a456fd709ff60800000000000000
+      internalID: 8068488863469431027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_22
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 109
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bc7d684bd62ad30800000000000000
+      internalID: 4441232804664560446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_23
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 109
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b7a3423689d0870800000000000000
+      internalID: 8650738010825587535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4fdda0b3cf2aac0800000000000000
+      internalID: -3845233801305394002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 36
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ee1d182a860e3c0800000000000000
+      internalID: -4332347794358407636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 36
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c627be1567a4061b0800000000000000
+      internalID: -5665446459191102868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_27
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 36
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a8071d3bce1a8b0800000000000000
+      internalID: -5142569042423281131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_28
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 35
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42e52602a9c49210800000000000000
+      internalID: 1338916686960910923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_29
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 36
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b76102c2304abb0800000000000000
+      internalID: -4925808604384691324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 36
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90342a43b824c2070800000000000000
+      internalID: 8082908596874134281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BallTexture_31
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 36
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce74dc26fc78a5e0800000000000000
+      internalID: -1898129846180741425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

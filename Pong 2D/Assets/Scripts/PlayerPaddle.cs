@@ -7,7 +7,7 @@ public class PlayerPaddle : MonoBehaviour
     //Variables
     [SerializeField] private float speed = 7f;
     [SerializeField] private bool isPlayer1;
-    private float LimitYBound = 3.75f;
+    private float LimitYBound = 3.5f;
 
     //Functions
     void Update()
