@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
 
     private static GameManager instance;
 
-
+   
+    //Singleton
     public static GameManager Instance
     {
         get
@@ -29,7 +30,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    //Funciones
+   
     public void player1Goal()
     {
         player1Score++;
