@@ -13,8 +13,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform player2Transform;
     [SerializeField] private Transform ball;
 
+
+    [SerializeField] private bool iaGame;
     private int player1Score;
     private int player2Score;
+    
 
     private static GameManager instance;
 
@@ -30,8 +33,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int Player2Score { get => player2Score; set => player2Score = value; }
+    public int Player1Score { get => player1Score; set => player1Score = value; }
     //Funciones
-   
+
     public void player1Goal()
     {
         player1Score++;
@@ -47,8 +52,9 @@ public class GameManager : MonoBehaviour
 
    public void Restart()
     {
-        player1Transform.position = new Vector2(player1Transform.position.x, 0);
-        player2Transform.position = new Vector2(player2Transform.position.x, 0);
-       ball.position = new Vector2(0, 0);
+        if(!iaGame)
+            player2Transform.position = new Vector2(player2Transform.position.x, 0);
+        player1Transform.position = new Vector2(player1Transform.position.x, 0);        
+        ball.position = new Vector2(0, 0);
     }
 }
