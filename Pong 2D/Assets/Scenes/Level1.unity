@@ -575,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4078374632446454033, guid: 62614b7c9dd47ad4b895ad19cf0448a0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4078374632446454034, guid: 62614b7c9dd47ad4b895ad19cf0448a0, type: 3}
       propertyPath: m_RootOrder
@@ -1086,6 +1086,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &916837959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4078374632446454038, guid: 62614b7c9dd47ad4b895ad19cf0448a0, type: 3}
+  m_PrefabInstance: {fileID: 423318494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &916837960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916837959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7adeba2c3f95b34eb2b60c27cb2927a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  ball: {fileID: 716117654}
 --- !u!1 &956503234
 GameObject:
   m_ObjectHideFlags: 0

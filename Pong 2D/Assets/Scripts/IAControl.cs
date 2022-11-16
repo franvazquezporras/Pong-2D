@@ -17,9 +17,8 @@ public class IAControl : MonoBehaviour
     }
     
     private void DifficultControl()
-    {
-        Debug.Log("VELOCIDAD " + currentSpeed);
-        if (currentSpeed < basicSpeed + (GameManager.Instance.Player1Score*0.5f))
+    {        
+        if (currentSpeed < basicSpeed + (GameManager.Instance.Player1Score * 0.5f))
             currentSpeed = basicSpeed + (GameManager.Instance.Player1Score * 0.5f);      
     }
 

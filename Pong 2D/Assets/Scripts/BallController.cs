@@ -19,9 +19,9 @@ public class BallController : MonoBehaviour
     {
         ballRb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
-        InitBall();
+        StartCoroutine(WaitFirstBall());
+       
     }
-
 
     private void InitBall()
     {
@@ -65,6 +65,13 @@ public class BallController : MonoBehaviour
             GameManager.Instance.player2Goal();
         PlayBallSound(1);
         GameManager.Instance.Restart();
+        InitBall();
+    }
+
+
+    IEnumerator WaitFirstBall()
+    {
+        yield return new WaitForSeconds(1);
         InitBall();
     }
 }
