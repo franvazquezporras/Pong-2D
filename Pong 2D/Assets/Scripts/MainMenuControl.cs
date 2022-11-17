@@ -6,30 +6,53 @@ using UnityEngine;
 
 public class MainMenuControl : MonoBehaviour
 {
-    [SerializeField] private GameObject MainMenu;
-    [SerializeField] private GameObject SelectorLevelMenu;
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject selectorLevelMenu;
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject scorePanel;
 
 
-    private void Start()
+    private void Update()
     {
-        LoadMainMenu();
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            Pause();   
+        }
     }
+    public void Pause()
+    {
 
+        Time.timeScale = 0;
+        scorePanel.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+    public void Continue()
+    {
+        
+        pauseMenu.SetActive(false);
+        scorePanel.SetActive(true);
+        Time.timeScale = 1;
+    }
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
     public void LoadSelectorLevel()
     {
-        MainMenu.SetActive(false);
-        SelectorLevelMenu.SetActive(true);
+        mainMenu.SetActive(false);
+        selectorLevelMenu.SetActive(true);
     }
 
     public void LoadMainMenu()
     {
-        MainMenu.SetActive(true);
-        SelectorLevelMenu.SetActive(false);
+        mainMenu.SetActive(true);
+        selectorLevelMenu.SetActive(false);
     }
 
     public void LoadTwoPlayerGame()
     {
-        SceneManager.LoadScene("GameLevel");
+        SceneManager.LoadScene("PlayerVsPlayer");
     }
 
     public void Quit()

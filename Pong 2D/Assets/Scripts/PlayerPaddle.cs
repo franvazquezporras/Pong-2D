@@ -20,7 +20,6 @@ public class PlayerPaddle : MonoBehaviour
 
         Vector2 playerPosition = transform.position;
         playerPosition.y = Mathf.Clamp(playerPosition.y + movement * speed * Time.deltaTime, -LimitYBound, LimitYBound);
-        transform.position = playerPosition;
-
+        transform.position = playerPosition;       
     }
 }

@@ -59,13 +59,21 @@ public class BallController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("GoalLeft"))        
-            GameManager.Instance.player1Goal();
+        if (collision.gameObject.CompareTag("GoalLeft"))
+            MatchControl.Instance.player1Goal();
         else
-            GameManager.Instance.player2Goal();
-        PlayBallSound(1);
-        GameManager.Instance.Restart();
-        InitBall();
+            MatchControl.Instance.player2Goal();
+        PlayBallSound(1);        
+        if(MatchControl.Instance.Player1Score<2 && MatchControl.Instance.Player2Score < 2)
+        {
+            MatchControl.Instance.Restart();
+            InitBall();
+        }
+        else
+        {
+            MatchControl.Instance.EndGame();
+        }
+        
     }
 
 

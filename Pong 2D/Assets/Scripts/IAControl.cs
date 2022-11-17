@@ -18,8 +18,8 @@ public class IAControl : MonoBehaviour
     
     private void DifficultControl()
     {        
-        if (currentSpeed < basicSpeed + (GameManager.Instance.Player1Score * 0.5f))
-            currentSpeed = basicSpeed + (GameManager.Instance.Player1Score * 0.5f);      
+        if (currentSpeed < basicSpeed + (MatchControl.Instance.Player1Score * 0.5f))
+            currentSpeed = basicSpeed + (MatchControl.Instance.Player1Score * 0.5f);      
     }
 
   
