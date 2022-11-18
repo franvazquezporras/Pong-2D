@@ -14,6 +14,7 @@ public class MatchControl : MonoBehaviour
     [SerializeField] private Transform ball;
     [SerializeField] private TMP_Text winText;
     [SerializeField] private GameObject panelWin;
+    [SerializeField] private GameObject panelLose;
 
     [SerializeField] private bool iaGame;
     private int player1Score;
@@ -57,9 +58,16 @@ public class MatchControl : MonoBehaviour
         if(Player2Score == 2)
         {
             if (iaGame)
+            {
                 winText.text = "You Lose";
+                panelLose.SetActive(true);
+            }
             else
+            {
                 winText.text = "Player 2 Win";
+                panelLose.SetActive(true);
+            }
+                
         }
         else
         {
@@ -69,9 +77,12 @@ public class MatchControl : MonoBehaviour
                 winText.enabled = true;
                 StartCoroutine(NextGame());
             }                
-            else 
+            else
+            {
                 winText.text = "Player 1 Win";
-            
+                panelLose.SetActive(true);
+            }
+                
         }
         winText.enabled = true;
         panelWin.SetActive(true);

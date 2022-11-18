@@ -38,6 +38,11 @@ public class MainMenuControl : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void LoadSelectorLevel()
     {
         mainMenu.SetActive(false);
