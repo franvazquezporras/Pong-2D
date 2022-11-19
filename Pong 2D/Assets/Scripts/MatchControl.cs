@@ -55,7 +55,7 @@ public class MatchControl : MonoBehaviour
     }
     public void EndGame()
     {
-        if(Player2Score == 2)
+        if(Player2Score == 10)
         {
             if (iaGame)
             {
@@ -100,7 +100,7 @@ public class MatchControl : MonoBehaviour
     {
         panelWin.SetActive(true);
         yield return new WaitForSeconds(3);
-        SelectorLevel nextLevel = new SelectorLevel();
+        SelectorLevel nextLevel = new SelectorLevel();      
         nextLevel.nextLevel();
     }
 }

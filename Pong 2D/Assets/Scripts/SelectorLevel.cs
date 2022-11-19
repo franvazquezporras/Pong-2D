@@ -38,10 +38,14 @@ public class SelectorLevel : MonoBehaviour
     {        
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("UnlockedLevels"))        
             PlayerPrefs.SetInt("UnlockedLevels", PlayerPrefs.GetInt("UnlockedLevels") + 1);  
-        else if(SceneManager.GetActiveScene().buildIndex == 8)
+        
+        
+        if(SceneManager.GetActiveScene().buildIndex == 8)
             Application.LoadLevel(0);
-        else
+        else 
             LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+       
+            
     }
 
 }
