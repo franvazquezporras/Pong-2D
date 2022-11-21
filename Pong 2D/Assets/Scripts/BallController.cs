@@ -64,7 +64,7 @@ public class BallController : MonoBehaviour
         else
             MatchControl.Instance.player2Goal();
         PlayBallSound(1);        
-        if(MatchControl.Instance.Player1Score<10 && MatchControl.Instance.Player2Score < 10)
+        if(MatchControl.Instance.Player1Score<2 && MatchControl.Instance.Player2Score < 2)
         {
             MatchControl.Instance.Restart();
             InitBall();

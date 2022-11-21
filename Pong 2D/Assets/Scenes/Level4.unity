@@ -1130,7 +1130,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2168,6 +2168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
   selectorLevelMenu: {fileID: 0}
+  selectorSkinMenu: {fileID: 0}
   pauseMenu: {fileID: 993583742}
   scorePanel: {fileID: 96247765}
 --- !u!4 &1712706020 stripped
@@ -2849,6 +2850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4078374632446454033, guid: 62614b7c9dd47ad4b895ad19cf0448a0, type: 3}
+      propertyPath: skinDB
+      value: 
+      objectReference: {fileID: 11400000, guid: b832f6ffbea9d164d88309e7936ba4e6, type: 2}
     - target: {fileID: 4078374632446454034, guid: 62614b7c9dd47ad4b895ad19cf0448a0, type: 3}
       propertyPath: m_RootOrder
       value: 2

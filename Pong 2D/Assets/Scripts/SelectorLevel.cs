@@ -35,7 +35,9 @@ public class SelectorLevel : MonoBehaviour
 
 
     public void nextLevel()
-    {        
+    {
+
+        
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("UnlockedLevels"))        
             PlayerPrefs.SetInt("UnlockedLevels", PlayerPrefs.GetInt("UnlockedLevels") + 1);  
         
@@ -44,8 +46,8 @@ public class SelectorLevel : MonoBehaviour
             Application.LoadLevel(0);
         else 
             LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+
        
-            
     }
 
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPaddle : MonoBehaviour
 {
@@ -9,7 +10,30 @@ public class PlayerPaddle : MonoBehaviour
     [SerializeField] private bool isPlayer1;
     private float LimitYBound = 3.5f;
 
+
+
+    [SerializeField] private PlayerSkinDataBase skinDB;
+    private SpriteRenderer spriteSkin;
+    private int selectedSkin = 0;
+
     //Functions
+    private void Awake()
+    {
+        spriteSkin = GetComponent<SpriteRenderer>();
+    }
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name != "PlayerVsPlayer")
+        {
+            if (!PlayerPrefs.HasKey("SelectedSkin"))
+                selectedSkin = 0;
+            else
+                Load();
+
+            UpdateSkin(selectedSkin);
+        } 
+        
+    }
     void Update()
     {
         float movement; 
@@ -21,5 +45,14 @@ public class PlayerPaddle : MonoBehaviour
         Vector2 playerPosition = transform.position;
         playerPosition.y = Mathf.Clamp(playerPosition.y + movement * speed * Time.deltaTime, -LimitYBound, LimitYBound);
         transform.position = playerPosition;       
+    }
+    private void UpdateSkin(int selected)
+    {
+        PlayerSkin skin = skinDB.GetSkin(selected);
+        spriteSkin.sprite = skin.skin;
+    }
+    private void Load()
+    {
+        selectedSkin = PlayerPrefs.GetInt("SelectedSkin");
     }
 }

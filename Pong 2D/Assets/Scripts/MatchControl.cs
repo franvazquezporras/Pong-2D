@@ -55,7 +55,7 @@ public class MatchControl : MonoBehaviour
     }
     public void EndGame()
     {
-        if(Player2Score == 10)
+        if(Player2Score == 2)
         {
             if (iaGame)
             {
