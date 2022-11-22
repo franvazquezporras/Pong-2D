@@ -14,6 +14,7 @@ public class BallController : MonoBehaviour
     [SerializeField] private AudioClip hitwall;
     private AudioSource audioSource;
 
+    public GameObject lastPaddleHit;
     //Functions
     void Start()
     {
@@ -46,7 +47,8 @@ public class BallController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {
+        {          
+            lastPaddleHit = collision.gameObject;
             ballRb2d.velocity *= speedMultiplier;
             PlayBallSound(2);
         }
@@ -59,21 +61,23 @@ public class BallController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("GoalLeft"))
-            MatchControl.Instance.player1Goal();
-        else
-            MatchControl.Instance.player2Goal();
-        PlayBallSound(1);        
-        if(MatchControl.Instance.Player1Score<2 && MatchControl.Instance.Player2Score < 2)
+        if(collision.gameObject.CompareTag("GoalLeft") || collision.gameObject.CompareTag("GoalRight"))
         {
-            MatchControl.Instance.Restart();
-            InitBall();
+            if (collision.gameObject.CompareTag("GoalLeft"))
+                MatchControl.Instance.player1Goal();
+            else if (collision.gameObject.CompareTag("GoalRight"))
+                MatchControl.Instance.player2Goal();
+            PlayBallSound(1);
+            if (MatchControl.Instance.Player1Score < 2 && MatchControl.Instance.Player2Score < 2)
+            {
+                MatchControl.Instance.Restart();
+                InitBall();
+            }
+            else
+            {
+                MatchControl.Instance.EndGame();
+            }
         }
-        else
-        {
-            MatchControl.Instance.EndGame();
-        }
-        
     }
 
 

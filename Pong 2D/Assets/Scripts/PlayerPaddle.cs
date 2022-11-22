@@ -8,8 +8,7 @@ public class PlayerPaddle : MonoBehaviour
     //Variables
     [SerializeField] private float speed = 7f;
     [SerializeField] private bool isPlayer1;
-    private float LimitYBound = 3.5f;
-
+    private float limitYBound = 3.5f;    
 
 
     [SerializeField] private PlayerSkinDataBase skinDB;
@@ -42,10 +41,15 @@ public class PlayerPaddle : MonoBehaviour
         else
             movement = Input.GetAxisRaw("Vertical2");
 
-        Vector2 playerPosition = transform.position;
-        playerPosition.y = Mathf.Clamp(playerPosition.y + movement * speed * Time.deltaTime, -LimitYBound, LimitYBound);
+        Vector2 playerPosition = transform.position;        
+        playerPosition.y = Mathf.Clamp(playerPosition.y + movement * speed * Time.deltaTime, -limitYBound, limitYBound);
         transform.position = playerPosition;       
     }
+    public void SetLimitYBound(float limit)
+    {
+        limitYBound = limit;
+    }
+    
     private void UpdateSkin(int selected)
     {
         PlayerSkin skin = skinDB.GetSkin(selected);

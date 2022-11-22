@@ -9,7 +9,7 @@ public class IAControl : MonoBehaviour
     private float currentSpeed = 0;
     [SerializeField] private GameObject ball;
     private Vector2 ballPosition;
-    private float LimitYBound = 3.5f;
+    private float limitYBound = 3.5f;
     void Update()
     {
         Move();
@@ -22,16 +22,19 @@ public class IAControl : MonoBehaviour
             currentSpeed = basicSpeed + (MatchControl.Instance.Player1Score * 0.5f);      
     }
 
-  
 
+    public void SetLimitYBound(float limit)
+    {
+        limitYBound = limit;
+    }
     private void Move()
     {
         ballPosition = ball.transform.position;
         Vector2 playerPosition = transform.position;
         if (transform.position.y > ballPosition.y)                   
-            playerPosition.y = Mathf.Clamp(playerPosition.y + (-currentSpeed * Time.deltaTime), -LimitYBound, LimitYBound);
+            playerPosition.y = Mathf.Clamp(playerPosition.y + (-currentSpeed * Time.deltaTime), -limitYBound, limitYBound);
         else if (transform.position.y < ballPosition.y)
-            playerPosition.y = Mathf.Clamp(playerPosition.y + currentSpeed * Time.deltaTime, -LimitYBound, LimitYBound);
+            playerPosition.y = Mathf.Clamp(playerPosition.y + currentSpeed * Time.deltaTime, -limitYBound, limitYBound);
         transform.position = playerPosition;
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GoalLeft
   - GoalRight
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player1
+  - Player2
   - 
   - 
   - 
