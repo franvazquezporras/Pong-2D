@@ -6,6 +6,8 @@ public class PowerUp : MonoBehaviour
 {
     [SerializeField] private float ScalePlayer = 2;
     [SerializeField] private float duration = 5;
+    [SerializeField] private float lifeTime = 8;
+
     private BallController ball;
     private GameObject playerFocus;
     private SpriteRenderer sprite;
@@ -15,18 +17,18 @@ public class PowerUp : MonoBehaviour
         ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallController>();
         collider = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
+        Destroy(gameObject,lifeTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        playerFocus = ball.lastPaddleHit;
-
-        collider.enabled = false;
-        sprite.enabled = false;
-        StartCoroutine(InitPowerUp());
+        if(collision.gameObject.name == "Ball")
+        {
+            playerFocus = ball.lastPaddleHit;
+            collider.enabled = false;
+            sprite.enabled = false;
+            StartCoroutine(InitPowerUp());
+        }
         
-
-
     }
     private void changeLimit(float newLimit)
     {
