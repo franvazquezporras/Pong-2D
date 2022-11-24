@@ -5,5 +5,6 @@ using UnityEngine.UI;
 [System.Serializable]
 public class PlayerSkin 
 {
+    //Variables
     public Sprite skin;    
 }
