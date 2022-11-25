@@ -8,14 +8,19 @@ public class BallController : MonoBehaviour
     [SerializeField] private float initialSpeed = 4f;
     [SerializeField] private float speedMultiplier = 1.1f;
     private Rigidbody2D ballRb2d;
-
     [SerializeField] private AudioClip goal;
     [SerializeField] private AudioClip hitplayer;
     [SerializeField] private AudioClip hitwall;
     private AudioSource audioSource;
-
     public GameObject lastPaddleHit;
-    //Functions
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Start                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Asigna las referencias de las variables e inicia la corrutina para la primera pelota                              */
+    /*********************************************************************************************************************************/
     void Start()
     {
         ballRb2d = GetComponent<Rigidbody2D>();
@@ -24,6 +29,11 @@ public class BallController : MonoBehaviour
        
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: InitBall                                                                                                              */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Genera la direccion de salida de la pelota de forma aleatoria en las 4 diagonales y asigna la velocidad a la misma*/
+    /*********************************************************************************************************************************/
     private void InitBall()
     {
         float xSpeed = Random.Range(0, 2) == 0 ? 1 : -1;
@@ -31,6 +41,12 @@ public class BallController : MonoBehaviour
         ballRb2d.velocity = new Vector2(xSpeed, ySpeed)* initialSpeed;
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: PlayBallSound                                                                                                         */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: Sonido                                                                                                  */
+    /*Descripción: Se reproduce el sonido que recibe como parametro de entrada                                                       */
+    /*********************************************************************************************************************************/
     private void PlayBallSound(int sound)
     {
         switch (sound)
@@ -44,6 +60,13 @@ public class BallController : MonoBehaviour
         }
         audioSource.Play();        
     }
+
+    /*********************************************************************************************************************************/
+    /*Funcion: OnCollisionEnter2D                                                                                                    */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: colision de otro objeto                                                                                 */
+    /*Descripción: Si golpea una de las palas (jugadores) aumenta la velocidad de la pelota                                          */
+    /*********************************************************************************************************************************/
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -59,6 +82,13 @@ public class BallController : MonoBehaviour
             
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: OnTriggerEnter2D                                                                                                      */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: colision de otro objeto                                                                                 */
+    /*Descripción: Comprueba si a llegado a marcar un gol y en que porteria se ha marcado                                            */
+    /*********************************************************************************************************************************/
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("GoalLeft") || collision.gameObject.CompareTag("GoalRight"))
@@ -80,7 +110,11 @@ public class BallController : MonoBehaviour
         }
     }
 
-
+    /*********************************************************************************************************************************/
+    /*Funcion: WaitFirstBall                                                                                                         */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Espera un tiempo antes de iniciar el movimiento de la pelota                                                      */
+    /*********************************************************************************************************************************/
     IEnumerator WaitFirstBall()
     {
         yield return new WaitForSeconds(1);

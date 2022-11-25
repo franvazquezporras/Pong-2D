@@ -8,23 +8,17 @@ public class MatchControl : MonoBehaviour
     //Variables
     [SerializeField] private TMP_Text player1ScoreText;
     [SerializeField] private TMP_Text player2ScoreText;
-
     [SerializeField] private Transform player1Transform;
     [SerializeField] private Transform player2Transform;
     [SerializeField] private Transform ball;
     [SerializeField] private TMP_Text winText;
     [SerializeField] private GameObject panelWin;
     [SerializeField] private GameObject panelLose;
-
     [SerializeField] private bool iaGame;
     private int player1Score;
     private int player2Score;
-
     public int Player2Score { get => player2Score; set => player2Score = value; }
     public int Player1Score { get => player1Score; set => player1Score = value; }
-
-
-
     private static MatchControl instance;
 
 
@@ -40,22 +34,39 @@ public class MatchControl : MonoBehaviour
     }
 
 
-    //Funciones
-
+    /*********************************************************************************************************************************/
+    /*Funcion: player1Goal                                                                                                           */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Aumenta el marcador del jugador 1 en subiendo un punto y actualiza el texto de su marcardor                       */
+    /*********************************************************************************************************************************/
     public void player1Goal()
     {
         player1Score++;
         player1ScoreText.text = player1Score.ToString();
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: player2Goal                                                                                                           */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Aumenta el marcador del jugador 2 en subiendo un punto y actualiza el texto de su marcardor                       */
+    /*********************************************************************************************************************************/
     public void player2Goal()
     {
         player2Score++;
         player2ScoreText.text = player2Score.ToString();
     }
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: EndGame                                                                                                               */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Comprueba si alguno de los 2 marcadores a llegado al maximo de goles (10) actualizando el cartel de               */
+    /*             victoria/derrota y activandolo.                                                                                   */
+    /*********************************************************************************************************************************/
     public void EndGame()
     {
-        if(Player2Score == 2)
+        if(Player2Score == 10)
         {
             if (iaGame)
             {
@@ -66,8 +77,7 @@ public class MatchControl : MonoBehaviour
             {
                 winText.text = "Player 2 Win";
                 panelLose.SetActive(true);
-            }
-                
+            }                
         }
         else
         {
@@ -81,13 +91,17 @@ public class MatchControl : MonoBehaviour
             {
                 winText.text = "Player 1 Win";
                 panelLose.SetActive(true);
-            }
-                
+            }                
         }
         winText.enabled = true;
         panelWin.SetActive(true);
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: Restart                                                                                                               */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Reinicia las posiciones de los jugadores(Excepto de la IA) y la pelota al marcar un gol                           */
+    /*********************************************************************************************************************************/
     public void Restart()
     {
         if (!iaGame)
@@ -96,6 +110,12 @@ public class MatchControl : MonoBehaviour
         ball.position = new Vector2(0, 0);
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: NextGame                                                                                                              */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Corrutina activa el panel de victoria, espera 3 segundos y carga el siguiente nivel                               */
+    /*********************************************************************************************************************************/
     IEnumerator NextGame()
     {
         panelWin.SetActive(true);
