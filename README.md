@@ -9,6 +9,7 @@ PowerUp que aumentan el tamaño del jugador durante un periodo de tiempo.
 
 
 *Comentario*
+
 Me propuse hacer un Pong 2D desde 0 para practicar nuevas mecanicas como los powerUps y empezar a esquematizar un poco mejor el codigo
 
 
