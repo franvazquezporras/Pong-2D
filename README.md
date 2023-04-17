@@ -1,6 +1,6 @@
 # Pong-2D
 
-#Español
+# Español
 
 *Descripcion:* 
 
@@ -20,7 +20,7 @@ Me propuse hacer un Pong 2D desde 0 para practicar nuevas mecanicas como los pow
 https://zetaka.itch.io/pong-2d
 
 
-#English
+# English
 
 *Description:*
 
